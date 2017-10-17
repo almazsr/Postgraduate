@@ -1,0 +1,29 @@
+{
+  "Id": "PG",
+  "Name": "Postgraduate",
+  "Iterations": [
+    {
+      "Name": "Initial",
+      "Tasks": [
+        {
+          "Id": "PG-1",
+          "Name": "Сделать тестовый проект на Fluent",
+          "ExpectedManHours": 2.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "InProgress",
+          "Type": "Implementation",
+          "Time": {
+            "Intervals": [
+              {
+                "StartAt": "17.10.17 00:26"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "CurrentIterationId": 0,
+  "LastTaskIndex": 1
+}

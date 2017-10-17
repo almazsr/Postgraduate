@@ -1,0 +1,20 @@
+from fipy.meshes import Grid2D
+from fipy.variables.cellVariable import CellVariable
+from fipy.terms.transientTerm import TransientTerm
+from fipy.terms.implicitDiffusionTerm import ImplicitDiffusionTerm
+from fipy.viewers.gistViewer import Gist1DViewer
+
+nx = 100
+dx = 0.1
+
+mesh = Grid2D(dx=dx, nx=nx)
+phi = CellVariable(mesh=mesh, name='phi')
+eq = (TransientTerm() - ImplicitDiffusionTerm(coeff=1) == 0)
+viewer = Gist1DViewer(vars=phi)
+viewer.plot()
+steps = 100
+for i in range(steps):
+ phi.updateOld()
+ eq.solve()
+ viewer.plot()
+
