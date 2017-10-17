@@ -2,14 +2,15 @@
 <Storage>
   <Project Version="8.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">4920</timestamp-max>
+    <timestamp-max valType="Int64">5370</timestamp-max>
     <framework-build-version valType="String">18.2.109.0</framework-build-version>
     <external-version-string valType="String">Release 18.2</external-version-string>
-    <last-saved-utc valType="String">10/17/2017 17:17:35</last-saved-utc>
+    <last-saved-utc valType="String">10/17/2017 18:38:04</last-saved-utc>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">almaz@TARIS:C:\Users\almaz\AppData\Local\Temp\WorkbenchLogs\CoreEvents5136.log</ArrayEntry>
       <ArrayEntry Index="1">almaz@TARIS:C:\Users\almaz\AppData\Local\Temp\WorkbenchLogs\CoreEvents9064.log</ArrayEntry>
       <ArrayEntry Index="2">almaz@TARIS:C:\Users\almaz\AppData\Local\Temp\WorkbenchLogs\CoreEvents8196.log</ArrayEntry>
+      <ArrayEntry Index="3">almaz@TARIS:D:\.babun\cygwin\tmp\WorkbenchLogs\CoreEvents13160.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -645,7 +646,6 @@
 "6db2ba3a-150d-474b-9c20-2a2d7ec37201": "/Units/Quantity:Quantity 586",
 "dd5c199c-e065-4c44-ae01-f331d5926a9a": "/Units/Quantity:Quantity 587",
 "7767c2ee-5365-4b95-8c69-66f9a202bdf9": "/FileContainer/FileReference:F8",
-"c94e9101-7e19-430a-8c24-76df31a3c7b8": "/FileContainer/FileReference:F9",
 "282c3fcb-9270-4466-9a76-666684f59058": "/FileContainer/FileReference:F10",
 "7b551c10-957a-4708-9313-4fd9b7739143": "/FileContainer/FileReference:F12",
 "787a2ae2-b771-4fa2-8870-236bec8225d5": "/FileContainer/FileReference:F11",
@@ -653,7 +653,9 @@
 "fd6ab682-cf5f-4594-a466-caf758d402c9": "/FileContainer/FileReference:F15",
 "6d6d6621-4aae-4364-8797-86ab9694f330": "/FileContainer/FileReference:F13",
 "67f1fb45-68f4-413e-863f-955ddd43941e": "/FileTypesContainer/FileType:InterpolateDataFile",
-"1d7e42d9-9a3c-43d4-8ea7-f13a5f14cd8c": "/FileTypesContainer/FileType:FLUENTData"
+"1d7e42d9-9a3c-43d4-8ea7-f13a5f14cd8c": "/FileTypesContainer/FileType:FLUENTData",
+"1ad39ae1-c5d7-45a7-886a-e934f71647f5": "/FileContainer/FileReference:F17",
+"ecaa19c0-4fa3-484c-8a80-9cfff2e27597": "/FileContainer/FileReference:F16"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -669,7 +671,7 @@
 "630428ec-05d4-4ac8-a0f2-1185c4e013fe": "/Results/SolutionDataLink:SolutionDataProvider",
 "ea9fca23-0295-4bdc-80a2-694db7a957df": "/Results/CFDResults:Results Source",
 "eff880d9-90bb-49b3-ac56-e3022bf9ace1": "/Mesh 1/MechanicalMeshFile:FluentMesh",
-"0f796601-0f4d-44bf-a3bd-aeaef7bd5953": "/Mesh 1/MechanicalModel:MechanicalModel"
+"9b008d00-35eb-4209-9196-fbcd52a27f19": "/Mesh 1/MechanicalModel:MechanicalModel"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -692,7 +694,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4289, "Input": 1754, "Output": 1754}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5337, "Input": 1754, "Output": 1754}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/FileContainer/FileReference:F1" Version="1.0">
@@ -725,15 +727,10 @@
         <object-name valType="String">F8</object-name>
         <member-data valType="String">{"DisplayText": "FFF.agdb", "FileType": $$25c93593-3216-47cc-8ae1-ea90004e9a32, "DependentFiles": [], "ContainerAssociations": ["Geometry 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\DM\FFF.agdb", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F9" Version="1.0">
-        <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F9</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.mshdb", "FileType": $$9906032f-0697-40fd-ac23-64e6a7bc863a, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\FFF.mshdb", "ReferenceCount": 1}</member-data>
-      </Object>
       <Object Name="/FileContainer/FileReference:F10" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F10</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.1.msh", "FileType": $$99c9640c-e7f6-4b0b-a489-75d0fe4f6161, "DependentFiles": [], "ContainerAssociations": ["Mesh 1", "Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\MECH\FFF.1.msh", "ReferenceCount": 2}</member-data>
+        <member-data valType="String">{"DisplayText": "FFF.1.msh", "FileType": $$99c9640c-e7f6-4b0b-a489-75d0fe4f6161, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\MECH\FFF.1.msh", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F14" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -745,13 +742,23 @@
         <object-name valType="String">F15</object-name>
         <member-data valType="String">{"DisplayText": "FFF.1-1-00000.dat.gz", "FileType": $$1d7e42d9-9a3c-43d4-8ea7-f13a5f14cd8c, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.1-1-00000.dat.gz", "ReferenceCount": 3}</member-data>
       </Object>
+      <Object Name="/FileContainer/FileReference:F16" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F16</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.3.msh", "FileType": $$99c9640c-e7f6-4b0b-a489-75d0fe4f6161, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\MECH\FFF.3.msh", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F17" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F17</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.mshdb", "FileType": $$9906032f-0697-40fd-ac23-64e6a7bc863a, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\FFF.mshdb", "ReferenceCount": 1}</member-data>
+      </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
       <container-type valType="String">Project:Messages</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4466, "Input": 1755, "Output": 1755}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5145, "Input": 1755, "Output": 1755}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Messages/StoredMessage:Message" Version="1.0">
@@ -855,6 +862,51 @@ Solid""", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 14:09:
         <object-name valType="String">Message 19</object-name>
         <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "The Setup component in Fluid Flow (Fluent) requires user input before it can be updated. For instructions on how to address the cell in its current state, click the blue triangle in the lower right corner of the cell.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 16:14:21, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
       </Object>
+      <Object Name="/Messages/StoredMessage:Message 20" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 20</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:37:36, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 21" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 21</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Update failed for the Mesh component in Fluid Flow (Fluent).  Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:38:01, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$f71d8363-23b7-4e84-8f2c-ded9a3d9ed5e, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 22" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 22</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:38:25, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 23" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 23</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:38:41, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 24" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 24</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "PlugIn Error:  No valid bodies found.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:39:37, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 25" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 25</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "PlugIn Error: Attach failed.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:39:37, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 26" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 26</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Update failed for the Mesh component in Fluid Flow (Fluent).  Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:39:39, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$f71d8363-23b7-4e84-8f2c-ded9a3d9ed5e, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 27" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 27</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "PlugIn Error:  No valid bodies found.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:42:03, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 28" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 28</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Unable to attach to geometry file D:\projects\Postgraduate\fluent\test_files\dp0\FFF\DM\FFF.agdb. Unable to attach geometry.", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 20:42:05, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -863,7 +915,7 @@ Solid""", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 14:09:
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4468, "Input": 1759, "Output": 1758}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5336, "Input": 1759, "Output": 1758}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
@@ -885,7 +937,7 @@ Solid""", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 14:09:
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4324, "Input": 4202, "Output": 1761}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5332, "Input": 5195, "Output": 1761}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:FFF" Version="1.0">
@@ -970,9 +1022,9 @@ Solid""", "Details": None, "Association": "", "DateTimeStamp": 10/17/2017 14:09:
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2295, "Input": 2458, "Output": 2000}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4984, "Input": 5197, "Output": 2000}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/ReportDataContainer/ReportDocument:Document" Version="1.0">
         <class-type valType="String">ReportDocument</class-type>
         <object-name valType="String">Document</object-name>

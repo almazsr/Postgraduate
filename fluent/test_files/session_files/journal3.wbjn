@@ -664,3 +664,28 @@ END
 geometry1.Edit()
 Save(Overwrite=True)
 Save(Overwrite=True)
+meshComponent1.Refresh()
+geometryComponent1.Update(AllDependencies=True)
+meshComponent1.Refresh()
+meshComponent1.Refresh()
+meshComponent1.Reset()
+meshComponent1.Reset()
+meshComponent1.Update(AllDependencies=True)
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent2 = system2.GetComponent(Name="Geometry")
+geometryComponent2.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent1,
+    SourceSystem=system1)
+meshComponent2 = system2.GetComponent(Name="Mesh")
+meshComponent2.Refresh()
+system2.Delete()
+geometry1.Edit()
+Save(Overwrite=True)
+meshComponent1.Update(AllDependencies=True)
+mesh1.Edit()
+mesh1.Exit()
+mesh1.Edit()

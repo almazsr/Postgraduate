@@ -5,6 +5,8 @@ dp0/FFF/Fluent/FFF.1-Setup-Output.cas.gz
 dp0/FFF/Fluent/FFF.1.ip
 dp0/FFF/Fluent/FFF.1.set
 dp0/FFF/MECH/FFF.1.msh
+dp0/FFF/MECH/FFF.3.msh
+dp0/FFF/MECH/FFF.msh
 dp0/FFF/Post/Fluid Flow Fluent.cst
 dp0/global/MECH/FFF.mshdb
 dp0/designPoint.wbdp
@@ -12,6 +14,8 @@ progress_files/dp0/FFF/Fluent/report.xml
 session_files/journal1.wbjn
 session_files/journal2.wbjn
 session_files/journal3.wbjn
+session_files/journal3_crashed.wbjn
+session_files/journal4.wbjn
 dp0/
 progress_files/
 report_files/
