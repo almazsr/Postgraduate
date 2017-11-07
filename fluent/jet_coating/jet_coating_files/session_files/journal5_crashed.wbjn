@@ -1,0 +1,641 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="FLU 1")
+system2 = system1.Duplicate(RelativeTo=system1)
+system2.DisplayText = "Wind"
+setup1 = system2.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list ))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|bottom (wall, id=6)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|bottom (wall, id=6)"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|bottom (wall, id=6)"))(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*List_Tree1\" (list \"Setup|Boundary Conditions\"))(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 0))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*Table3*DropDownList2(Type)\" '( 14))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*DropDownList2(Type)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-real-entry-list \"Velocity Inlet*Frame3*Frame1(Momentum)*Table1*Table8*RealEntry2(Velocity Magnitude)\" '( 0.5))(cx-gui-do cx-activate-item \"Velocity Inlet*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 1))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 0))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 4))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 3))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 6))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 5))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*Table3*DropDownList2(Type)\" '( 15))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*DropDownList2(Type)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 5))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 6))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*Table3*DropDownList2(Type)\" '( 12))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*DropDownList2(Type)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Pressure Outlet*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*ButtonBox10*PushButton2(Initialize)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*ButtonBox11*PushButton1(Patch)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Patch*Frame3*List1(Zones to Patch)\" '( 0))(cx-gui-do cx-activate-item \"Patch*Frame3*List1(Zones to Patch)\")(cx-gui-do cx-set-list-selections \"Patch*Frame1*Table2*List2(Variable)\" '( 3))(cx-gui-do cx-activate-item \"Patch*Frame1*Table2*List2(Variable)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Patch*PanelButtons*PushButton3(Patch)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Patch*PanelButtons*PushButton1(Close)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame12*PushButton1(Reset DPM Sources)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Models|Species (Off)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Models|Discrete Phase (On)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Models|Discrete Phase (On)"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Models|Discrete Phase (On)"))(cx-gui-do cx-activate-item "Discrete Phase Model*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*PushButton22(Calculate)")(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list ))')
+template1 = GetTemplate(TemplateName="Results")
+solutionComponent1 = system2.GetComponent(Name="Solution")
+componentTemplate1 = GetComponentTemplate(Name="CFDPostTemplate")
+system3 = template1.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=solutionComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    Position="Right",
+    RelativeTo=system2)
+results1 = system3.GetContainer(ComponentName="Results")
+results1.Edit()
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.15, 0, 0
+    Scale = 1.81818
+    Pan = 0, 0
+    Rotation Quaternion = 0, 0, 0, 1
+    
+  END
+
+END
+
+> update
+> autolegend plot=/CONTOUR:Contour 1, view=VIEW:View 1""")
+results1.SendCommand(Command="""CONTOUR:Contour 1
+Apply Instancing Transform = On
+Clip Contour = Off
+Colour Map = Default Colour Map
+Colour Scale = Linear
+Colour Variable = Velocity
+Colour Variable Boundary Values = Conservative
+Constant Contour Colour = Off
+Contour Range = Global
+Culling Mode = No Culling
+Domain List = /DOMAIN GROUP:All Domains
+Draw Contours = On
+Font = Sans Serif
+Fringe Fill = On
+Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+Lighting = On
+Line Colour = 0, 0, 0
+Line Colour Mode = Default
+Line Width = 1
+Location List = symmetry 1
+Max = 0.0 [m s^-1]
+Min = 0.0 [m s^-1]
+Number of Contours = 11
+Show Numbers = Off
+Specular Lighting = On
+Surface Drawing = Smooth Shading
+Text Colour = 0, 0, 0
+Text Colour Mode = Default
+Text Height = 0.024
+Transparency = 0.0
+Use Face Values = Off
+Value List = 0 [m s^-1],1 [m s^-1]
+  OBJECT VIEW TRANSFORM:
+  Apply Reflection = Off
+  Apply Rotation = Off
+  Apply Scale = Off
+  Apply Translation = Off
+  Principal Axis = Z
+  Reflection Plane Option = XY Plane
+  Rotation Angle = 0.0 [degree]
+  Rotation Axis From = 0 [m], 0 [m], 0 [m]
+  Rotation Axis To = 0 [m], 0 [m], 0 [m]
+  Rotation Axis Type = Principal Axis
+  Scale Vector = 1 , 1 , 1 
+  Translation Vector = 0 [m], 0 [m], 0 [m]
+  X = 0.0 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+  END
+END""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""ANIMATION:ANIMATION
+QAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+QAnim Save MPEG = Off
+QAnim Looping = Bounce
+QAnim Looping Cycles = 1
+Video Format = wmv
+
+END""")
+results1.SendCommand(Command="""DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>animate timestepAnimate""")
+results1.SendCommand(Command="> autolegend plot=/CONTOUR:Contour 2, view=VIEW:View 1")
+results1.SendCommand(Command="""CONTOUR:Contour 2
+Apply Instancing Transform = On
+Clip Contour = Off
+Colour Map = Default Colour Map
+Colour Scale = Linear
+Colour Variable = Temperature
+Colour Variable Boundary Values = Conservative
+Constant Contour Colour = Off
+Contour Range = Global
+Culling Mode = No Culling
+Domain List = /DOMAIN GROUP:All Domains
+Draw Contours = On
+Font = Sans Serif
+Fringe Fill = On
+Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+Lighting = On
+Line Colour = 0, 0, 0
+Line Colour Mode = Default
+Line Width = 1
+Location List = symmetry 1
+Max = 0.0 [K]
+Min = 0.0 [K]
+Number of Contours = 11
+Show Numbers = Off
+Specular Lighting = On
+Surface Drawing = Smooth Shading
+Text Colour = 0, 0, 0
+Text Colour Mode = Default
+Text Height = 0.024
+Transparency = 0.0
+Use Face Values = Off
+Value List = 0 [K],1 [K]
+  OBJECT VIEW TRANSFORM:
+  Apply Reflection = Off
+  Apply Rotation = Off
+  Apply Scale = Off
+  Apply Translation = Off
+  Principal Axis = Z
+  Reflection Plane Option = XY Plane
+  Rotation Angle = 0.0 [degree]
+  Rotation Axis From = 0 [m], 0 [m], 0 [m]
+  Rotation Axis To = 0 [m], 0 [m], 0 [m]
+  Rotation Axis Type = Principal Axis
+  Scale Vector = 1 , 1 , 1 
+  Translation Vector = 0 [m], 0 [m], 0 [m]
+  X = 0.0 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+  END
+END""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>animate timestepAnimate""")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Apply Instancing Transform = On
+Colour = 0.5, 0.5, 0.5
+Colour Map = Default Colour Map
+Colour Mode = Constant
+Colour Scale = Linear
+Colour Variable = Pressure
+Colour Variable Boundary Values = Hybrid
+Culling Mode = No Culling
+Domain List = All Domains
+Draw Faces = On
+Draw Lines = Off
+Instancing Transform = Default Transform
+Lighting = true
+Line Colour = 0, 0, 0
+Line Width = 2
+Location = 
+Max = 
+Min = 
+Node Number = 0
+Normalized = Off
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Range = Global
+Specular Lighting = On
+Surface Drawing = Smooth Shading
+Symbol Size = 9
+Symbol Size Mode = Absolute
+Transparency = 0.0
+Variable = 
+Variable Boundary Values = Hybrid
+Visibility = true
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="> autolegend plot=/CONTOUR:Contour 1, view=VIEW:View 1")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command=r"""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.15, 0, 0
+    Scale = 2.25
+    Pan = 0, 0
+    Rotation Quaternion = 0, 0, 0, 1
+    
+  END
+
+END
+
+> update
+DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-1-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-1-00200.dat.gz
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END""")
+results1.SendCommand(Command="> load timestep=200")
+results1.SendCommand(Command="> load timestep=100")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.15, 0, 0
+    Scale = 1.86047
+    Pan = 0, 0
+    Rotation Quaternion = 0, 0, 0, 1
+    
+  END
+
+END
+
+> update
+> load timestep=200""")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="> load timestep=190")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="> load timestep=0")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="> load timestep=40")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+results1.SendCommand(Command="> load timestep=200")
+results1.SendCommand(Command="""INTERNAL POINT:Probe Point
+Colour = 0.5, 0.5, 0.5
+Colour Mode = Constant
+Colour Variable = Pressure
+Option = XYZ
+Point = 0 [m], 0 [m], 0 [m]
+Point Symbol = Point2D
+Symbol Size = 9
+END""")
+results1.SendCommand(Command="""CALCULATOR:CALCULATOR
+Expression = Pressure
+Function = probe
+Location = Probe Point
+Case Name = Case Wind
+END
+>calculate
+>show /INTERNAL POINT:Probe Point""")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Results|Graphics|Particle Tracks"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Results|Graphics|Particle Tracks"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*List_Tree1\" (list \"Results|Graphics|Particle Tracks\"))(cx-gui-do cx-set-list-selections \"Particle Tracks*Frame3*List5(Release from Injections)\" '( 0))(cx-gui-do cx-activate-item \"Particle Tracks*Frame3*List5(Release from Injections)\")(cx-gui-do cx-set-list-selections \"Particle Tracks*Frame3*Table1*DropDownList2\" '( 13))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*Frame3*Table1*DropDownList2")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Particle Tracks*Table2*Frame1*Frame2*Frame1(Track Style)*Frame1*DropDownList1\" '( 2))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*Table2*Frame1*Frame2*Frame1(Track Style)*Frame1*DropDownList1")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton7(Pulse)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton7(Pulse)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*List_Tree1\" (list \"Setup|Boundary Conditions\"))(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 0))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*Table4*ButtonBox1*PushButton1(Edit)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*Table4*ButtonBox1*PushButton1(Edit)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-real-entry-list \"Velocity Inlet*Frame3*Frame1(Momentum)*Table1*Table8*RealEntry2(Velocity Magnitude)\" '( 0.25))(cx-gui-do cx-activate-item \"Velocity Inlet*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))(cx-gui-do cx-list-tree-right-click "NavigationPane*List_Tree1" )(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*ButtonBox10*PushButton2(Initialize)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*PushButton22(Calculate)")(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list ))(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list ))')
+resultsComponent1 = system3.GetComponent(Name="Results")
+resultsComponent1.Refresh()
+results1.SendCommand(Command="""DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>animate timestepAnimate""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="> autolegend plot=/CONTOUR:Contour 2, view=VIEW:View 1")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 1, view=/VIEW:View 1""")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END""")
+results1.SendCommand(Command="> load timestep=100")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+END
+DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>load timestep=0""")
+results1.SendCommand(Command="""DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>animate timestepAnimate""")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+END
+DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>load timestep=10""")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+END
+DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>load timestep=20""")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+END
+DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>load timestep=30""")
+results1.SendCommand(Command=r"""DATA READER:
+  Active Case Name = Case Wind
+  Current Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+  Master Results File = D:\projects\Postgraduate\fluent\jet_coating\jet_coating_files\dp0\FLU-6\Fluent\SYS-1.1-2-00200.dat.gz
+END
+DATA READER:
+Timestep Match Criterion = Same Step
+Timestep Sync Mode = By Time Value
+Timevalue Match Criterion = Same Value
+END
+ANIMATION: ANIMATION
+TimeAnim Control Case = Case Wind
+TimeAnim Control Variable = Timestep
+TimeAnim Frame Interval = All Timesteps
+TimeAnim Frame Spacing = Equal In Time
+TimeAnim Number Of Frames = 21
+TimeAnim Timestep Interval = 1
+TimeAnim Specify Range = Off
+TimeAnim MPEG Filename = D:/.babun/cygwin/home/almaz/Wind.wmv
+TimeAnim Save MPEG = Off
+TimeAnim Looping Cycles = 1
+Video Format = wmv
+END
+>load timestep=40""")

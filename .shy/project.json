@@ -11,19 +11,80 @@
           "ExpectedManHours": 2.0,
           "Assignee": "me",
           "Priority": 1,
-          "Status": "InProgress",
+          "Status": "Done",
           "Type": "Implementation",
           "Time": {
             "Intervals": [
               {
-                "StartAt": "17.10.17 00:26"
+                "StartAt": "17.10.17 00:26",
+                "FinishAt": "24.10.17 16:12"
               }
             ]
+          }
+        },
+        {
+          "Id": "PG-2",
+          "Name": "Добавить частицы во Fluent",
+          "ExpectedManHours": 2.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "Done",
+          "Type": "Implementation",
+          "Time": {
+            "Intervals": []
+          }
+        },
+        {
+          "Id": "PG-3",
+          "Name": "Изучить модель теплообмена",
+          "ExpectedManHours": 2.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "Done",
+          "Type": "Investigation",
+          "Time": {
+            "Intervals": []
+          }
+        },
+        {
+          "Id": "PG-4",
+          "Name": "Изменить граничные условия на цилиндре на trap",
+          "ExpectedManHours": 1.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "Done",
+          "Type": "Implementation",
+          "Time": {
+            "Intervals": []
+          }
+        },
+        {
+          "Id": "PG-5",
+          "Name": "Посчитать количество частиц на цилиндре",
+          "ExpectedManHours": 2.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "Done",
+          "Type": "Implementation",
+          "Time": {
+            "Intervals": []
+          }
+        },
+        {
+          "Id": "PG-6",
+          "Name": "Изучить материалы Федяева",
+          "ExpectedManHours": 2.0,
+          "Assignee": "me",
+          "Priority": 1,
+          "Status": "Done",
+          "Type": "Investigation",
+          "Time": {
+            "Intervals": []
           }
         }
       ]
     }
   ],
   "CurrentIterationId": 0,
-  "LastTaskIndex": 1
+  "LastTaskIndex": 6
 }

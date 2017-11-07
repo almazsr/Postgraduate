@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: jet_coating
+# Creation date: 10/28/2017 02:50:17
+# 
+# 10/28/2017 02:50:17
+# The parameters defined in the project are:
+# ,P1 - parameter-1 [m s^-1]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,123
